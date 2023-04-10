@@ -1,0 +1,67 @@
+{
+    "name": "it-lgtm-but-tbh-idk-so-wdyt",
+    "version": "1.1.2",
+    "description": "The Google Chrome extention which helps you to see what \"LGTM\" stands for.",
+    "main": "index.js",
+    "scripts": {
+        "sort": "cat src/words.txt | sort > src/words.tmp && mv src/words.tmp src/words.txt",
+        "prepare": "npm run sort && node ./bin/prepare.mjs",
+        "build": "npm run prepare && webpack --mode production",
+        "dist": "npm run build && node bin/dist.mjs",
+        "watch": "npm run prepare && webpack --watch --mode production",
+        "lint": "eslint --no-error-on-unmatched-pattern src/*",
+        "lint:fix": "eslint --fix --no-error-on-unmatched-pattern src/*",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/otchy210/it-lgtm-but-tbh-idk-so-wdyt.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/otchy210/it-lgtm-but-tbh-idk-so-wdyt/issues"
+    },
+    "homepage": "https://github.com/otchy210/it-lgtm-but-tbh-idk-so-wdyt#readme",
+    "devDependencies": {
+        "@types/chrome": "0.0.200",
+        "@types/jest": "^29.2.0",
+        "@types/react": "^18.0.24",
+        "@types/react-dom": "^18.0.8",
+        "@types/styled-components": "^5.1.26",
+        "@typescript-eslint/eslint-plugin": "^5.40.1",
+        "@typescript-eslint/parser": "^5.40.1",
+        "eslint": "^8.26.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "jest": "^29.2.2",
+        "jest-environment-jsdom": "^29.2.2",
+        "prettier": "^2.7.1",
+        "ts-jest": "^29.0.3",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.8.4",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "jest": {
+        "testEnvironment": "jsdom",
+        "transform": {
+            "^.+\\.tsx?$": [
+                "ts-jest",
+                {
+                    "useESM": true
+                }
+            ]
+        },
+        "preset": "ts-jest/presets/default-esm"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "styled-components": "^5.3.6"
+    }
+}

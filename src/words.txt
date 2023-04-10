@@ -1,0 +1,65 @@
+A.K.A.  Also known as
+AFAIK   As far as I know
+AFK     Away from keyboard
+AKA     Also known as
+ASAP    As soon as possible
+ATM     At the moment
+BC      Because
+BFF     Best friends forever
+BRB     Be right back
+BTW     By the way
+DFD     Date for a date
+EOD     End of day
+ETA     Estimated time of arrival
+FWD     Forward
+FYI     For your information
+HRS     Hours
+IDK     I don't know
+IIRC    If I remember correctly
+IMHO    In my humble opinion
+IMO     In my opinion
+JFYI    Just for your information
+LGTM    Looks good to me
+LMK     Let me know
+LOL     Laugh out loud (https://en.wikipedia.org/wiki/LOL)
+MGMT    Management
+MINS    Minutes
+N/A     Not available
+NA      Not available
+NP      No problem
+NSFW    Not safe for work (https://en.wikipedia.org/wiki/Not_safe_for_work)
+NVM     Never mind
+OOO     Out of office
+OOTO    Out of the office
+PLS     Please
+POC     Point of contact
+POC     Proof of concept
+POV     Point of view
+PPL     People
+PTAL    Please take another look
+PTO     Paid time off
+QQ      Quick question
+RSVP    Repondez s'il vous plait (https://en.wikipedia.org/wiki/RSVP)
+SGTM    Sounds good to me
+SME     Subject matter expert
+SMTH    Something
+SSOT    Single source of truth
+STH     Something
+TBA     To be announced
+TBD     To be determined
+TBH     To be honest
+THO     Though
+THRU    Through
+THX     Thanks
+TIL     Today I learned
+TL;DR   Too long, didn't read (https://en.wikipedia.org/wiki/TL;DR)
+TLDR    Too long, didn't read (https://en.wikipedia.org/wiki/TL;DR)
+TMI     Too much information
+TMR     Tomorrow
+TY      Thank you
+W/      With
+W/O     Without
+WDYT    What do you think
+WIP     Work in progress
+WRT     With reference to
+YMMV    Your mileage may vary
