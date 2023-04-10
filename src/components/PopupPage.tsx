@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { colors } from '../utils/colors';
+import { consts } from '../utils/consts';
 import { useSyncStorage } from '../utils/Storage';
 import GlobalStyle from './GlobalStyle';
-
-const DEFAULT_TEMPLATE = '${comment} / ${title}';
 
 const Title = styled.div`
     color: ${colors.darkGrey};
@@ -65,7 +64,7 @@ export const PopupPage: React.FC = () => {
     const [note, setNote] = useState<string>('');
     const syncStorage = useSyncStorage();
     useEffect(() => {
-        Promise.all([syncStorage.getConfig<string>('template', DEFAULT_TEMPLATE)]).then(([template]) => {
+        Promise.all([syncStorage.getConfig<string>('template', consts.defaultTemplate)]).then(([template]) => {
             setTemplate(template);
             setLoading(false);
         });
@@ -74,7 +73,7 @@ export const PopupPage: React.FC = () => {
         return;
     }
     const onClickDefault = () => {
-        setTemplate(DEFAULT_TEMPLATE);
+        setTemplate(consts.defaultTemplate);
     };
     const onClickSave = async () => {
         await syncStorage.setConfig('template', template);
@@ -94,9 +93,10 @@ export const PopupPage: React.FC = () => {
                 }}
             />
             <Desc>
-                テンプレート中にはブックマークコメントを表す <Code>{'${comment}'}</Code> と記事タイトルを表す <Code>{'${title}'}</Code> を使用する事が出来ます。
+                テンプレート中にはブックマークコメントを表す <Code>{consts.commentVar}</Code> と記事タイトルを表す <Code>{consts.titleVar}</Code>{' '}
+                を使用する事が出来ます。
                 <br />
-                生成したツイートの長さが 140 文字を超える場合は、超えた分が自動的に切り取られます。
+                生成したツイートが長すぎる場合は、URL を含めて 140 文字以内におさまるようにツイートの最後が切り取られます。
                 <br />(<Link onClick={onClickDefault}>テンプレートをデフォルトに戻す</Link>)
             </Desc>
             <Flex>

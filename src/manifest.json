@@ -13,12 +13,6 @@
             "js": ["page.js"]
         }
     ],
-    "web_accessible_resources": [
-        {
-            "resources": ["images/*.png"],
-            "matches": ["*://*/*"]
-        }
-    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {

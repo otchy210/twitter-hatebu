@@ -1,4 +1,20 @@
-const iconPng = chrome.runtime.getURL('images/icon128.png');
+import { consts } from './utils/consts';
+import { useConfig } from './utils/useConfig';
+
+const POSSIBLE_MAX_TWEET_LENGTH = 140 - 12;
+
+const openTwitter = async () => {
+    const titleElem = document.querySelector('.js-entry-info-title-text');
+    const title = titleElem.getAttribute('title');
+    const url = titleElem.getAttribute('href');
+    const entryElem = document.querySelector('.entry-myBookmark-text');
+    const comment = entryElem.textContent;
+    const template = (await useConfig()).template;
+    const rawTweet = template.replaceAll(consts.commentVar, comment).replaceAll(consts.titleVar, title);
+    const tweet = rawTweet.length <= POSSIBLE_MAX_TWEET_LENGTH ? rawTweet : rawTweet.slice(0, POSSIBLE_MAX_TWEET_LENGTH - 1) + '…';
+    const tweetURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}&url=${encodeURIComponent(url)}`;
+    window.open(tweetURL);
+};
 
 const handleContainer = (container: HTMLDivElement) => {
     const menu = container.querySelector('.js-bookmark-menu');
@@ -8,6 +24,7 @@ const handleContainer = (container: HTMLDivElement) => {
         <button type="button" class="entry-myBookmark-menu-btn">
             <span class="entry-myBookmark-popup">Twitter を開く</span>
         </button>`;
+    li.addEventListener('click', openTwitter);
     menu.insertBefore(li, menu.firstChild);
 };
 
