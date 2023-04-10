@@ -1,7 +1,7 @@
 {
-    "name": "it-lgtm-but-tbh-idk-so-wdyt",
-    "version": "1.1.2",
-    "description": "The Google Chrome extention which helps you to see what \"LGTM\" stands for.",
+    "name": "twitter-hatebu",
+    "version": "1.0.0",
+    "description": "The Google Chrome extention which allows you to easily tweet hatebu content",
     "main": "index.js",
     "scripts": {
         "sort": "cat src/words.txt | sort > src/words.tmp && mv src/words.tmp src/words.txt",
@@ -15,14 +15,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/otchy210/it-lgtm-but-tbh-idk-so-wdyt.git"
+        "url": "git+https://github.com/otchy210/twitter-hatebu.git"
     },
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/otchy210/it-lgtm-but-tbh-idk-so-wdyt/issues"
+        "url": "https://github.com/otchy210/twitter-hatebu/issues"
     },
-    "homepage": "https://github.com/otchy210/it-lgtm-but-tbh-idk-so-wdyt#readme",
+    "homepage": "https://github.com/otchy210/twitter-hatebu#readme",
     "devDependencies": {
         "@types/chrome": "0.0.200",
         "@types/jest": "^29.2.0",
