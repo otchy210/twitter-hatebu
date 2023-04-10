@@ -9,13 +9,13 @@
     "permissions": ["tabs", "storage"],
     "content_scripts": [
         {
-            "matches": ["*://*/*"],
+            "matches": ["https://b.hatena.ne.jp/entry/*"],
             "js": ["page.js"]
         }
     ],
     "web_accessible_resources": [
         {
-            "resources": ["words.json", "images/*.svg"],
+            "resources": ["images/*.png"],
             "matches": ["*://*/*"]
         }
     ],
