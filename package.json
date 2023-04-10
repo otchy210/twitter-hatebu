@@ -1,11 +1,10 @@
 {
     "name": "twitter-hatebu",
     "version": "1.0.0",
-    "description": "The Google Chrome extention which allows you to easily tweet hatebu content",
+    "description": "はてなブックマークのページから簡単にツイート出来るようにします。",
     "main": "index.js",
     "scripts": {
-        "sort": "cat src/words.txt | sort > src/words.tmp && mv src/words.tmp src/words.txt",
-        "prepare": "npm run sort && node ./bin/prepare.mjs",
+        "prepare": "node ./bin/prepare.mjs",
         "build": "npm run prepare && webpack --mode production",
         "dist": "npm run build && node bin/dist.mjs",
         "watch": "npm run prepare && webpack --watch --mode production",

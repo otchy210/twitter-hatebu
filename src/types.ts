@@ -20,15 +20,8 @@ export type MessageHandler = {
     handle: (payload?: Json) => Promise<Json>;
 };
 
-export type WordItem = [desc: string, url?: string];
-
-export type WordMap = {
-    [key: string]: WordItem[];
-};
-
-export type ConfigKey = 'popupEnabled' | 'disabledWords';
+export type ConfigKey = 'template';
 
 export type Config = {
-    popupEnabled: true;
-    disabledWords: Set<string>;
+    template: string;
 };

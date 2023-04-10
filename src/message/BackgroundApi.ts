@@ -1,4 +1,4 @@
-import { Config, Json, Message, MessageAction, WordItem } from '../types';
+import { Config, Json, Message, MessageAction } from '../types';
 
 class BackgroundApi {
     private send(action: MessageAction, payload?: Json): Promise<Json> {
@@ -10,17 +10,10 @@ class BackgroundApi {
             chrome.runtime.sendMessage(message, resolve);
         });
     }
-    getWordItems(word: string): Promise<WordItem[]> {
-        return this.send('getWordItems', { word }) as Promise<WordItem[]>;
-    }
-    notifyCardLoaded(width: number, height: number): Promise<boolean> {
-        return this.send('bgNotifyCardLoaded', { width, height }) as Promise<boolean>;
-    }
     async getConfig(): Promise<Config> {
         const jsonConfig = await this.send('getConfig');
         return {
-            popupEnabled: jsonConfig['popupEnabled'],
-            disabledWords: new Set<string>(jsonConfig['disabledWords']),
+            template: jsonConfig['template'],
         } as Config;
     }
 }

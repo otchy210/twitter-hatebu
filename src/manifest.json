@@ -1,5 +1,5 @@
 {
-    "name": "It LGTM but TBH IDK so WDYT",
+    "name": "Twitter はてブ",
     "description": "<will be replaced>",
     "version": "<will be replaced>",
     "manifest_version": 3,
@@ -15,7 +15,7 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": ["card.html", "words.json", "images/*.svg"],
+            "resources": ["words.json", "images/*.svg"],
             "matches": ["*://*/*"]
         }
     ],
