@@ -4,11 +4,15 @@
 
 本家 twitter.com 上の URL https://twitter.com/intent/tweet を必要なパラメータと共に開くと、ツイートの内容がプリセットされた状態で画面が開く、という本家の機能を利用しており、Twitter API には一切頼っていないため、障害 (？) 耐性が大変強くなっております。
 
+インストール方法は Chrome Web Store の審査が通ったら追記します。
+
+<!--
 このエクステンションをインストールすると、はてなブックマークのエントリーページに「Twitter を開く」アイコンが追加されるので、それをクリックするといい感じになります。
 
-![はてブついっと](https://www.otchy.net/s/img/twitter-hatebu-v1.0.0/animation.gif)
+![はてブついっと](https://www.otchy.net/s/img/hatebu-twit-v1.0.1/animation.gif)
 
 インストールは [Chrome Web Store](https://example.com) から行ってください。皆様のお役に立てれば幸いです。
+-->
 
 また、Feedly ユーザ様におかれましては、姉妹品の「[Feedly はてブ](https://chrome.google.com/webstore/detail/feedly-%E3%81%AF%E3%81%A6%E3%83%96/ggaaakgimbjhmglfoahnaoknmceipgni)」もよろしくお願いします。
 
