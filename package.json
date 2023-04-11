@@ -1,6 +1,6 @@
 {
     "name": "twitter-hatebu",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "はてなブックマークのページから簡単にツイート出来るようにします。",
     "main": "index.js",
     "scripts": {

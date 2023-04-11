@@ -1,4 +1,4 @@
-# Twitter はてブ
+# はてブついっと
 
 「[はてなブックマークで Twitter 連携機能・Twitter ログインが利用できない障害が発生しています](https://bookmark.hatenastaff.com/entry/2023/04/08/074419)」という障害 (？) の報告をうけて、Twitter API の状況に関わらず、はてブのページから自分のブコメを簡単にツイート出来る Google Chrome エクステンションを書きました。
 
@@ -6,7 +6,7 @@
 
 このエクステンションをインストールすると、はてなブックマークのエントリーページに「Twitter を開く」アイコンが追加されるので、それをクリックするといい感じになります。
 
-![Twitter はてブ](https://www.otchy.net/s/img/twitter-hatebu-v1.0.0/animation.gif)
+![はてブついっと](https://www.otchy.net/s/img/twitter-hatebu-v1.0.0/animation.gif)
 
 インストールは [Chrome Web Store](https://example.com) から行ってください。皆様のお役に立てれば幸いです。
 
@@ -14,6 +14,7 @@
 
 ## Changelog
 
+-   1.0.1 [2023-04-11] Change its name/icon to meet Google Chrome Web Store policy
 -   1.0.0 [2023-04-11] Initial version
 
 ## Development
